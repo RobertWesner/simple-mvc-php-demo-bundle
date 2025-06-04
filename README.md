@@ -47,7 +47,8 @@ final readonly class GreetingService
         private DemoInterface $demo,
     ) {}
     
-    public function doGreet() {
+    public function doGreet(): void
+    {
         print $this->demo->greetWorld();
     }
 }
